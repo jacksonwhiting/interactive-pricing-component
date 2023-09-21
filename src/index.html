@@ -27,16 +27,65 @@
 		<link rel="stylesheet" href="./dist/output.css" />
 	</head>
 
-	<body class="text-bodyPri font-fontPri font-semibold">
-		<main>
-			<!-- <header class="min-h-[5vh] bg-skin-canvas-pri"></header> -->
-			<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="449">
+	<body
+		class="text-bodyPri font-fontPri font-semibold text-skin-body-pri bg-skin-canvas-sec">
+		<main class="">
+			<svg
+				class="absolute"
+				xmlns="http://www.w3.org/2000/svg"
+				width="1440"
+				height="449">
 				<path
 					fill="#F1F5FE"
 					fill-rule="evenodd"
 					d="M0 0h1440v449H191.5C85.737 449 0 363.263 0 257.5V0z" />
 			</svg>
-			<section class="min-h-[35vh] bg-skin-canvas-sec"></section>
+			<header class="relative z-10">
+				<div class="pt-16 mx-auto text-center">
+					<div class="relative max-w-[200px] mx-auto flex justify-center">
+						<svg
+							class="absolute"
+							xmlns="http://www.w3.org/2000/svg"
+							width="146"
+							height="145">
+							<g fill="none" fill-rule="evenodd" stroke="#CFD8EF">
+								<circle cx="63" cy="82" r="62.5" />
+								<circle cx="105" cy="41" r="40.5" />
+							</g>
+						</svg>
+					</div>
+					<h1 class="mt-8 text-skin-hdg-pri font-extrabold text-hdgM">
+						Simple, traffic based pricing
+					</h1>
+
+					<p class="mt-4 text-[.8125rem]">
+						Sign up for our 30-day trial. <br />
+						No credit card required
+					</p>
+				</div>
+			</header>
+			<section
+				class="relative z-10 mt-12 mx-4 px-4 py-8 rounded-md shadow-2xl bg-white text-center">
+				<h2 class="mb-4 uppercase tracking[1.71px]" id="pageviews">
+					100K Pageviews
+				</h2>
+				<input
+					class="range-appearance w-full h-3 bg-skin-gray-pri-light rounded-2xl transition-transform"
+					type="range" />
+				<div>
+					<span id="price">$16.00</span>
+					<span>/ month</span>
+				</div>
+				<div>
+					<span>Monthly Billing</span>
+					<label class="switch">
+						<input type="checkbox" />
+						<span class="slider round"></span>
+					</label>
+					<span>Yearly Billing</span>
+					<span>-25%</span>
+				</div>
+			</section>
 		</main>
 		<script src="main.js" async></script>
 		<!-- May use defer instead of async in script tag -->
