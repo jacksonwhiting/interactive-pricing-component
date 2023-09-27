@@ -28,7 +28,7 @@
 	</head>
 
 	<body
-		class="text-bodyPri font-fontPri font-semibold text-skin-body-pri bg-skin-canvas-sec">
+		class="text-bodyPri font-fontPri font-semibold text-skin-body-pri bg-white">
 		<main class="">
 			<svg
 				class="absolute"
@@ -70,24 +70,75 @@
 					100K Pageviews
 				</h2>
 				<input
-					class="range-appearance w-full h-3 bg-skin-gray-pri-light rounded-2xl transition-transform"
-					type="range" />
-				<div>
-					<span id="price">$16.00</span>
-					<span>/ month</span>
+					class="range-gradient mb-4"
+					id="range-slider"
+					type="range"
+					min="0"
+					max="100"
+					value="60"
+					step="20" />
+
+				<div class="flex items-center justify-center mb-4">
+					<span
+						class="text-hdgL font-semibold text-skin-hdg-pri"
+						id="price"
+						>$16.00</span
+					>
+					<span class="text-hdgXs ml-2">/ month</span>
 				</div>
-				<div>
+				<div class="flex items-center justify-center space-x-3 mb-8">
 					<span>Monthly Billing</span>
 					<label class="switch">
 						<input type="checkbox" />
 						<span class="slider round"></span>
 					</label>
 					<span>Yearly Billing</span>
-					<span>-25%</span>
+					<span
+						class="flex items-center justify-center w-[42px] h-[19px] rounded-full px-6 py-3 bg-skin-accent-sec-light text-skin-accent-sec"
+						>-25%</span
+					>
 				</div>
+				<hr class="border-t-1 -mr-4 -ml-4 mb-8" />
+				<div class="space-y-3 mb-8">
+					<div class="flex items-center justify-center space-x-4">
+						<svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+							<path
+								fill="none"
+								stroke="#10D8C4"
+								stroke-width="2"
+								d="M1 4.134l1.907 1.908L7.949 1" />
+						</svg>
+						<span>Unlimited Websites</span>
+					</div>
+					<div class="flex items-center justify-center space-x-4">
+						<svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+							<path
+								fill="none"
+								stroke="#10D8C4"
+								stroke-width="2"
+								d="M1 4.134l1.907 1.908L7.949 1" />
+						</svg>
+						<span>100% data ownership</span>
+					</div>
+					<div class="flex items-center justify-center space-x-4">
+						<svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+							<path
+								fill="none"
+								stroke="#10D8C4"
+								stroke-width="2"
+								d="M1 4.134l1.907 1.908L7.949 1" />
+						</svg>
+						<span>Email reports</span>
+					</div>
+				</div>
+				<button
+					class="px-14 py-4 bg-skin-hdg-pri text-[#BECDFF] rounded-full cursor-pointer">
+					Start my trial
+				</button>
 			</section>
 		</main>
 		<script src="main.js" async></script>
 		<!-- May use defer instead of async in script tag -->
 	</body>
 </html>
+<!-- bg-gradient-to-r from-orange-600 from-80% via-gray-300 via-80% to-gray-300 -->
