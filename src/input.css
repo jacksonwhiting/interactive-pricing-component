@@ -23,7 +23,7 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background-color: #ccc;
+		background-color: #cfd8ef;
 		-webkit-transition: 0.4s;
 		transition: 0.4s;
 	}
@@ -66,16 +66,15 @@
 	/* === range theme and appearance === */
 	input[type="range"] {
 		font-size: 1.5rem;
-		width: 12.5em;
 	}
 
 	input[type="range"] {
-		color: #ef233c;
-		--thumb-height: 1.125em;
-		--track-height: 0.125em;
+		color: #10d8c4;
+		--thumb-height: 1.75em;
+		--track-height: 0.25em;
 		--track-color: #ecf0fb;
-		--brightness-hover: 180%;
-		--brightness-down: 80%;
+		--brightness-hover: 100%;
+		--brightness-down: 100%;
 		--clip-edges: 0.125em;
 	}
 
@@ -121,12 +120,12 @@
 			100vmax currentColor;
 
 		width: var(--thumb-width, var(--thumb-height));
-		background: linear-gradient(currentColor 0 0) scroll no-repeat left center /
-			50% calc(var(--track-height) + 1px);
+		/* background: linear-gradient(currentColor 0 0) scroll no-repeat left center /
+			50% calc(var(--track-height) + 1px); */
+		background: url("../assets/images/icon-slider.svg") no-repeat center;
 		background-color: currentColor;
 		box-shadow: var(--box-fill);
 		border-radius: var(--thumb-width, var(--thumb-height));
-
 		filter: brightness(100%);
 		clip-path: polygon(
 			100% -1px,
@@ -143,16 +142,18 @@
 	input[type="range"]:hover::-webkit-slider-thumb {
 		filter: brightness(var(--brightness-hover));
 		cursor: pointer;
+		color: #24aea1;
 	}
 
 	input[type="range"]:active::-webkit-slider-thumb {
 		filter: brightness(var(--brightness-down));
-		cursor: pointer;
+		cursor: grab;
 	}
 
 	input[type="range"]::-webkit-slider-runnable-track {
 		background: linear-gradient(var(--track-color) 0 0) scroll no-repeat
 			center / 100% calc(var(--track-height) + 1px);
+		border-radius: 9999px;
 	}
 
 	input[type="range"]:disabled::-webkit-slider-thumb {
@@ -175,7 +176,8 @@
 	}
 
 	input[type="range"]::-moz-range-thumb {
-		background: currentColor;
+		background: url("../assets/images/icon-slider.svg") no-repeat center;
+		background-color: currentColor;
 		border: 0;
 		width: var(--thumb-width, var(--thumb-height));
 		border-radius: var(--thumb-width, var(--thumb-height));

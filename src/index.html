@@ -40,7 +40,7 @@
 					fill-rule="evenodd"
 					d="M0 0h1440v449H191.5C85.737 449 0 363.263 0 257.5V0z" />
 			</svg>
-			<header class="relative z-10">
+			<header class="relative max-w-[330px] md:max-w-[395px] mx-auto z-10">
 				<div class="pt-16 mx-auto text-center">
 					<div class="relative max-w-[200px] mx-auto flex justify-center">
 						<svg
@@ -54,39 +54,47 @@
 							</g>
 						</svg>
 					</div>
-					<h1 class="mt-8 text-skin-hdg-pri font-extrabold text-hdgM">
-						Simple, traffic based pricing
+					<h1
+						class="mt-8 text-skin-hdg-pri font-extrabold text-hdgM md:text-hdgL">
+						Simple, traffic-based pricing
 					</h1>
 
-					<p class="mt-4 text-[.8125rem]">
-						Sign up for our 30-day trial. <br />
+					<p class="mt-4 text-[.8125rem] md:text-hdgXs">
+						Sign up for our 30-day trial. <br class="md:hidden" />
 						No credit card required
 					</p>
 				</div>
 			</header>
 			<section
-				class="relative z-10 mt-12 mx-4 px-4 py-8 rounded-md shadow-2xl bg-white text-center">
-				<h2 class="mb-4 uppercase tracking[1.71px]" id="pageviews">
-					100K Pageviews
-				</h2>
-				<input
-					class="range-gradient mb-4"
-					id="range-slider"
-					type="range"
-					min="0"
-					max="100"
-					value="60"
-					step="20" />
+				class="relative max-w-[330px] md:max-w-[540px] mx-auto z-10 mt-16 px-2 md:px-6 py-8 rounded-md shadow-2xl shadow-[#CFD8EF] bg-white text-center">
+				<div
+					class="contents md:grid md:max-w-[445px] md:mx-auto md:grid-cols-2 md:grid-rows-2">
+					<h2
+						class="mb-6 uppercase tracking[1.71px] md:text-[.875rem] md:col-start-1 md:row-start-1 self-center justify-self-start"
+						id="pageviews">
+						100K Pageviews
+					</h2>
+					<input
+						class="mb-4 w-[280px] md:w-[445px] md:col-start-1 md:col-span-2 md:row-start-2 place-self-center"
+						id="range-slider"
+						type="range"
+						min="0"
+						max="100"
+						value="60"
+						step="20" />
 
-				<div class="flex items-center justify-center mb-4">
-					<span
-						class="text-hdgL font-semibold text-skin-hdg-pri"
-						id="price"
-						>$16.00</span
-					>
-					<span class="text-hdgXs ml-2">/ month</span>
+					<div
+						class="flex items-center justify-center mb-6 md:col-start-2 md:row-start-1 self-center justify-self-end">
+						<span
+							class="text-hdgL md:text-[2.5rem] font-semibold text-skin-hdg-pri"
+							id="price"
+							>$16.00</span
+						>
+						<span class="text-hdgXs md:text-hdgS ml-2">/ month</span>
+					</div>
 				</div>
-				<div class="flex items-center justify-center space-x-3 mb-8">
+				<div
+					class="flex items-center justify-end space-x-2 md:space-x-4 mb-8 md:mr-[13%]">
 					<span>Monthly Billing</span>
 					<label class="switch">
 						<input type="checkbox" />
@@ -99,42 +107,55 @@
 					>
 				</div>
 				<hr class="border-t-1 -mr-4 -ml-4 mb-8" />
-				<div class="space-y-3 mb-8">
-					<div class="flex items-center justify-center space-x-4">
-						<svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
-							<path
-								fill="none"
-								stroke="#10D8C4"
-								stroke-width="2"
-								d="M1 4.134l1.907 1.908L7.949 1" />
-						</svg>
-						<span>Unlimited Websites</span>
+				<div
+					class="contents md:max-w-[445px] md:grid md:grid-cols-2 md:grid-rows-1 mx-auto">
+					<div
+						class="space-y-3 mb-8 md:mb-0 md:col-start-1 md:row-start-1 justify-self-start self-center">
+						<div class="flex items-center justify-center space-x-4">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="9"
+								height="8">
+								<path
+									fill="none"
+									stroke="#10D8C4"
+									stroke-width="2"
+									d="M1 4.134l1.907 1.908L7.949 1" />
+							</svg>
+							<span>Unlimited Websites</span>
+						</div>
+						<div class="flex items-center justify-center space-x-4">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="9"
+								height="8">
+								<path
+									fill="none"
+									stroke="#10D8C4"
+									stroke-width="2"
+									d="M1 4.134l1.907 1.908L7.949 1" />
+							</svg>
+							<span>100% data ownership</span>
+						</div>
+						<div class="flex items-center justify-center space-x-4">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="9"
+								height="8">
+								<path
+									fill="none"
+									stroke="#10D8C4"
+									stroke-width="2"
+									d="M1 4.134l1.907 1.908L7.949 1" />
+							</svg>
+							<span>Email reports</span>
+						</div>
 					</div>
-					<div class="flex items-center justify-center space-x-4">
-						<svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
-							<path
-								fill="none"
-								stroke="#10D8C4"
-								stroke-width="2"
-								d="M1 4.134l1.907 1.908L7.949 1" />
-						</svg>
-						<span>100% data ownership</span>
-					</div>
-					<div class="flex items-center justify-center space-x-4">
-						<svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
-							<path
-								fill="none"
-								stroke="#10D8C4"
-								stroke-width="2"
-								d="M1 4.134l1.907 1.908L7.949 1" />
-						</svg>
-						<span>Email reports</span>
-					</div>
+					<button
+						class="px-14 py-4 bg-skin-hdg-pri text-[#BECDFF] md:col-start-2 row-start-1 md:justify-self-end self-center rounded-full cursor-pointer">
+						Start my trial
+					</button>
 				</div>
-				<button
-					class="px-14 py-4 bg-skin-hdg-pri text-[#BECDFF] rounded-full cursor-pointer">
-					Start my trial
-				</button>
 			</section>
 		</main>
 		<script src="main.js" async></script>
