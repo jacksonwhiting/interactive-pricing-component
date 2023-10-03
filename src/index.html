@@ -72,22 +72,23 @@
 					<h2
 						class="mb-6 uppercase tracking[1.71px] md:text-[.875rem] md:col-start-1 md:row-start-1 self-center justify-self-start"
 						id="pageviews">
-						100K Pageviews
+						<span id="traffic-pageviews" class="mr-1">100K </span>
+						Pageviews
 					</h2>
 					<input
 						class="mb-4 w-[280px] md:w-[445px] md:col-start-1 md:col-span-2 md:row-start-2 place-self-center"
 						id="range-slider"
 						type="range"
 						min="0"
-						max="20"
-						value="10"
-						step="5" />
+						max="4"
+						value="2"
+						step="1" />
 
 					<div
 						class="flex items-center justify-center mb-6 md:col-start-2 md:row-start-1 self-center justify-self-end">
 						<span
 							class="text-hdgL md:text-[2.5rem] font-semibold text-skin-hdg-pri"
-							id="price"
+							id="traffic-price"
 							>$16.00</span
 						>
 						<span class="text-hdgXs md:text-hdgS ml-2">/ month</span>
@@ -97,7 +98,7 @@
 					class="flex items-center justify-end space-x-2 md:space-x-4 mb-8 md:mr-[13%]">
 					<span>Monthly Billing</span>
 					<label class="switch">
-						<input type="checkbox" />
+						<input id="annual-price-switch" type="checkbox" />
 						<span class="slider round"></span>
 					</label>
 					<span>Yearly Billing</span>
@@ -152,7 +153,7 @@
 						</div>
 					</div>
 					<button
-						class="px-14 py-4 bg-skin-hdg-pri text-[#BECDFF] md:col-start-2 row-start-1 md:justify-self-end self-center rounded-full cursor-pointer">
+						class="px-14 py-4 bg-skin-hdg-pri text-[#BECDFF] hover:text-white md:col-start-2 row-start-1 md:justify-self-end self-center rounded-full cursor-pointer">
 						Start my trial
 					</button>
 				</div>
